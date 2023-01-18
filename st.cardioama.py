@@ -8,7 +8,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # Import modules
-import opanai
+import oai
 
 # Configure logger
 logging.basicConfig(format="\n%(asctime)s\n%(message)s", level=logging.INFO, force=True)
