@@ -1,5 +1,3 @@
-pip install openai
-
 # Import from standard library
 import logging
 import re
