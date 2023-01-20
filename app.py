@@ -4,7 +4,7 @@ import streamlit as st
 openai.api_key = st.secrets["api_secret"]
 
 """
-'Welcome to your Barts Hospital cardiology chatbot!'
+#'Welcome to your Barts Hospital cardiology chatbot!'
 
 Note:
 This app is for research purposes only and the answers given can be wrong.
