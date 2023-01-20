@@ -21,9 +21,9 @@ response = openai.Completion.create(
     max_tokens=4000
 )
 
+answer = 'BartsChatbot:'+response["choices"][0]["text"]
 st.button(label="Submit", help='press to ask your question', on_click=answer)
 
-answer = 'BartsChatbot:'+response["choices"][0]["text"]
 st.write(answer)
 print(answer)
 
