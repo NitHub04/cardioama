@@ -16,7 +16,8 @@ chatbot_input = st.text_input('Ask your question below','e.g. what is a pacemake
 response = openai.Completion.create(
     engine="text-davinci-002",
     prompt=chatbot_input,
-    temperature=0.5
+    temperature=0.5,
+    max_tokens=1
 )
 
 answer = 'BartsChatbot:' + response["choices"][0]["text"]
