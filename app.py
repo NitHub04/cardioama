@@ -3,7 +3,7 @@ import streamlit as st
 
 openai.api_key = st.secrets["api_secret"]
 """
-# Welcome to My Hospital Chatbot!
+# Welcome to St Barts Cardiology Chatbot!
 Feel free to ask any questions below:
 
 Note:
