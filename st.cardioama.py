@@ -1,26 +1,21 @@
-
-# Import from standard library
-import logging
-import re
-
-# Import from 3rd party libraries
+import openai
 import streamlit as st
-import streamlit.components.v1 as components
 
-# Import modules
-import oai
+openai.api_key = st.secrets["api_secret"]
 
-# Configure logger
-logging.basicConfig(format="\n%(asctime)s\n%(message)s", level=logging.INFO, force=True)
+"""
+# Welcome to My Hospital Chatbot!
+Feel free to ask any questions below:
+"""
 
-#OpenAI key
-openai.api_key = "API KEY"
+chatbot_input = st.text_input('Ask a question?','What is an angiogram?')
 
 response = openai.Completion.create(
     engine="text-davinci-002",
-    prompt=st.text_input(''),
+    prompt=chatbot_input,
     temperature=0.5
 )
 
 answer = response["choices"][0]["text"]
 st.write(answer)
+print(answer)
