@@ -21,6 +21,10 @@ response = openai.Completion.create(
     max_tokens=4000
 )
 
+text_spinner_placeholder = st.empty()
+if st.session_state.text_error:
+    st.error(st.session_state.text_error)
+
 answer = 'BartsChatbot:'+response["choices"][0]["text"]
 st.write(answer)
 print(answer)
