@@ -5,14 +5,13 @@ openai.api_key = st.secrets["api_secret"]
 
 """
 # Welcome to your Barts Hospital cardiology chatbot!
-Feel free to ask any questions below:
 
 Note:
 This app is for research purposes only and the answers given can be wrong.
 This is not medical advice.
 """
 
-chatbot_input = st.text_input('Ask a question?','What is an angiogram?')
+chatbot_input = st.text_input('Ask your question below','What is an angiogram?')
 
 response = openai.Completion.create(
     engine="text-davinci-002",
