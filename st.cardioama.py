@@ -14,7 +14,7 @@ import oai
 logging.basicConfig(format="\n%(asctime)s\n%(message)s", level=logging.INFO, force=True)
 
 #OpenAI key
-openai.api_key = "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"
+openai.api_key = "API KEY"
 
 response = openai.Completion.create(
     engine="text-davinci-002",
