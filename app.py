@@ -3,13 +3,6 @@ import streamlit as st
 
 openai.api_key = st.secrets["api_secret"]
 
-[theme]
-primaryColor="#3769A2"
-backgroundColor="#689AD2"
-secondaryBackgroundColor="#FFFFFF"
-textColor="#F2E6E1FC"
-font="sans serif"
-
 """
 # Welcome to St Barts Cardiology Chatbot!
 Ask any questions below:
