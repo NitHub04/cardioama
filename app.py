@@ -20,7 +20,7 @@ response = openai.Completion.create(
     max_tokens=4000
 )
 
-answer = 'BartsChatbot:' + response["choices"][0]["text"]
+answer = 'BartsChatbot:'+response["choices"][0]["text"]
 st.write(answer)
 print(answer)
 
