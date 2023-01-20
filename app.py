@@ -22,7 +22,7 @@ response = openai.Completion.create(
 )
 
 answer = 'BartsChatbot:'+response["choices"][0]["text"]
-st.button(label="Submit", help='press to ask your question', on_click=answer)
+# st.button(label="Submit", help='press to ask your question', on_click=answer)
 
 st.write(answer)
 print(answer)
