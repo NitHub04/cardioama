@@ -3,10 +3,6 @@ import streamlit as st
 
 openai.api_key = st.secrets["api_secret"]
 
-streamlit = "cool"
-theming = "fantastic"
-both = "💥"
-
 """
 'Welcome to your Barts Hospital cardiology chatbot!'
 
@@ -31,3 +27,6 @@ print(answer)
 """
 Please email your feedback to bartshealth.bartsaf@nhs.net
 """
+streamlit = "cool"
+theming = "fantastic"
+both = "💥"
