@@ -11,7 +11,8 @@ This app is for research purposes only and the answers given can be wrong.
 This is not medical advice.
 """
 
-chatbot_input = st.text_input(st.subheader('Ask your question below'),'e.g. what is a pacemaker?...')
+st.subheader('Ask your question below')
+chatbot_input = st.text_input('e.g. what is a pacemaker?...')
 
 response = openai.Completion.create(
     engine="text-davinci-002",
