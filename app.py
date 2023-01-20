@@ -19,7 +19,7 @@ response = openai.Completion.create(
     temperature=0.5
 )
 
-answer = response["choices"][0]["text"]
+answer = 'BartsChatbot:' + response["choices"][0]["text"]
 st.write(answer)
 print(answer)
 
