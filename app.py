@@ -12,14 +12,14 @@ font="sans serif"
 
 """
 # Welcome to St Barts Cardiology Chatbot!
-Feel free to ask any questions below:
+Ask any questions below:
 
 Note:
-This app is for research purposes only and the answers given can be wrong.
+This app uses OpenAI's GPT-3 to generate answers and is for research purposes only.
 This is not medical advice.
 """
 
-chatbot_input = st.text_input('Ask your question below','e.g. what is a pacemaker?...')
+chatbot_input = st.text_input(label='Ask your question below', placeholder='e.g. what is a pacemaker?...')
 
 response = openai.Completion.create(
     engine="text-davinci-002",
