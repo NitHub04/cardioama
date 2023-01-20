@@ -11,7 +11,7 @@ This app is for research purposes only and the answers given can be wrong.
 This is not medical advice.
 """
 
-chatbot_input = st.text_input('Ask your question below','What is an angiogram?')
+chatbot_input = st.text_input('Ask your question below',\x1B['e.g. what is a pacemaker?...']\x1B)
 
 response = openai.Completion.create(
     engine="text-davinci-002",
