@@ -12,7 +12,7 @@ This app uses OpenAI's GPT-3 to generate answers and is for research purposes on
 This is not medical advice.
 """
 
-chatbot_input = st.text_input(label='Ask your question below', placeholder='e.g. what is a pacemaker?...')
+chatbot_input = st.text_input(label='Ask your question below', 'e.g. what is a pacemaker?...')
 
 response = openai.Completion.create(
     engine="text-davinci-002",
