@@ -45,7 +45,7 @@ admin_key = st.text_input('Admin Key','????')
 def convert_def(df):
     return df.to_csv(index=False)
 
-if st.button('Display') and admin_key = "1234":
+if st.button('Display') and admin_key == "1234":
     db_content = db.fetch().items
     df = pd.DataFrame.from_dict(db_content)
     st.dataframe(df)
