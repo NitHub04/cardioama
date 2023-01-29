@@ -49,5 +49,5 @@ if st.button('Display') and admin_key == "1234":
     db_content = db.fetch().items
     df = pd.DataFrame.from_dict(db_content)
     st.dataframe(df)
-    csv = convert(df)
+    csv = convert_def(df)
     st.download_button("Press to Download",csv,"file.csv","text/csv",key='download-csv')
