@@ -39,7 +39,15 @@ if st.button("Submit"):
 Please email your feedback to bartshealth.bartsaf@nhs.net
 """
 
-if st.button('Display'):
+admin_key = st.text_input('Admin Key','????')
+
+@st.experimental_memo
+def convert_def(df):
+    return df.to_csv(index=False)
+
+if st.button('Display') and admin_key = "1234":
     db_content = db.fetch().items
     df = pd.DataFrame.from_dict(db_content)
     st.dataframe(df)
+    csv = convert(df)
+    st.download_button("Press to Download",csv,"file.csv","text/csv",key='download-csv')
