@@ -20,15 +20,13 @@ This is not medical advice.
 chatbot_input = st.text_input('Ask a question?','What is an angiogram?')
 
 if st.button("Submit"):
-    
-        dateTimeObj = datetime.now()
-        timestampStr = dateTimeObj.strftime("%d-%b-%Y_%H:%M:%S")
-        response = openai.Completion.create(
-        engine="text-davinci-002",
-        prompt=chatbot_input,
-        temperature=0.1,
-        max_tokens=4000
-    )
+    dateTimeObj = datetime.now()
+    timestampStr = dateTimeObj.strftime("%d-%b-%Y_%H:%M:%S")
+    response = openai.Completion.create(
+    engine="text-davinci-002",
+    prompt=chatbot_input,
+    temperature=0.1,
+    max_tokens=4000)
 
     answer = 'BartsChatbot:'+response["choices"][0]["text"]
 # st.button(label="Submit", help='press to ask your question', on_click=answer)
